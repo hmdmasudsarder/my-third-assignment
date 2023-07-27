@@ -36,43 +36,39 @@
     <header class="container mx-auto">
       <!-- navbar start  -->
       <div class="bg-red-500 rounded-full my-5">
-        <div class="navbar-center">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
-            >
-              <li><a>Item 1</a></li>
-              <li><a>Item 3</a></li>
-            </ul>
+        <div class="navbar">
+          <div class="navbar-start hidden lg:flex">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <ul class="menu menu-horizontal ">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
           </div>
-          <a class="flex justify-center items-center text-xl">daisyUI</a>
+          <div class="navbar-center">
+            <img src="images/logo.png" alt="">
+            <a class="font-extrabold pl-2 text-4xl">Fruit Burst</a>
+          </div>
+          <div class="navbar-end">
+            <div class="form-control">
+              <input type="text" placeholder="Search Here" class="input relative rounded-full w-24 md:w-auto " />
+              <i class="fa-solid fa-magnifying-glass right-14 top-12 absolute"></i>
+            </div>
+          </div>
         </div>
-        <div class="navbar-start hidden items-center lg:flex related">
-          <ul class="flex absolute gap-4 lg:top-9 lg:left-20">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end"></div>
       </div>
       <!-- navbar end  -->
       <!-- banner section Start  -->
@@ -172,10 +168,10 @@
       </div>
       <!-- banner section End  -->
     </header>
-    <main class="container mx-auto py-40">
+    <main class="container mx-auto pt-40">
       <!-- card section time  -->
-      <div class="flex sm:flex-col-reverse sm:flex-wrap lg:justify-between lg:gap-64 items-center lg:flex-row ">
-        <div class="">
+      <div class="flex justify-between lg:gap-32 items-center ">
+        <div class="sm:flex-col sm:flex-wrap">
           <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
           <p class="text-stone-400">
             Contrary to popular belief, is not simply random text. It has roots
@@ -183,7 +179,7 @@
             2000 years old.
           </p>
         </div>
-        <div class="">
+        <div class="sm:flex-col sm:flex-wrap">
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl font-extrabold pl-5">
@@ -561,6 +557,28 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="bg-black h-96">
+      <div class="">
+        <div class="flex justify-center items-center pt-36">
+          <img src="images/logo.png" alt="">
+          <a class="font-extrabold pl-2 text-4xl text-white">Fruit Burst</a>
+        </div>
+        <div >
+          <ul class="flex justify-center items-center gap-9 pt-10">
+            <li class="text-white text-sm font-bold">Home</li>
+            <li class="text-white text-sm font-bold">About Us</li>
+            <li class="text-white text-sm font-bold">Shop</li>
+            <li class="text-white text-sm font-bold">All Fruits</li>
+            <li class="text-white text-sm font-bold">Support</li>
+            <li class="text-white text-sm font-bold">My Account</li>
+          </ul>
+        </div>
+        <div class="flex gap-12 pt-10 justify-center">
+          <i class="fa-brands fa-facebook text-white font-extrabold text-5xl"></i>
+          <i class="fa-brands fa-twitter  text-white font-extrabold text-5xl"></i>
+          <i class="fa-brands fa-youtube  text-white font-extrabold text-5xl"></i>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
